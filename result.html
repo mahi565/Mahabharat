@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margashirsha Date Checker Result</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Margashirsha Date Checker Result</h1>
+        <div id="result"></div>
+        <a href="index.html">Check another date</a>
+    </div>
+    <script>
+        // Get the result from the URL query parameters
+        const params = new URLSearchParams(window.location.search);
+        const result = params.get('result');
+        document.getElementById('result').textContent = result;
+    </script>
+</body>
+</html>
